@@ -7,16 +7,10 @@
 }
 
 body {
-  width: 1240px;
-  margin: 0 auto;
-
   background-color: #131313;
 
-  font-family: 'Nunito Sans', sans-serif;
-}
-
-%alegreya {
   font-family: 'Alegreya', serif;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 %nunito {
@@ -24,9 +18,11 @@ body {
 }
 
 $accent-color: #e3b873;
+$white-color: #e6e6e6;
 
 .container {
   width: 1240px;
+  margin: 0 auto;
 }
 
 .wrapper {
@@ -42,7 +38,7 @@ $accent-color: #e3b873;
 
 .header {
   .navbar {
-    font-size: 11px;
+    font-size: 12px;
     line-height: 15px;
 
     height: 80px;
@@ -66,7 +62,7 @@ $accent-color: #e3b873;
       .nav-link {
         text-decoration: none;
 
-        color: #fff;
+        color: #e6e6e6;
 
         &:hover {
           color: $accent-color;
@@ -81,16 +77,83 @@ $accent-color: #e3b873;
         color: $accent-color;
         margin-right: 45px;
       }
-      .promo-button {
-        padding: 13px 33px;
-        color: #fff;
-        background-color: $accent-color;
-        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-        border-radius: 2px;
-        border: none;
+    }
+  }
+}
 
-        cursor: pointer;
+.promo-button {
+  padding: 13px 33px;
+  color: #e6e6e6;
+  background-color: $accent-color;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  border-radius: 2px;
+  border: none;
+
+  font-style: italic;
+
+  cursor: pointer;
+}
+
+%Alegreya {
+  font: {
+    family: 'Alegreya';
+    style: normal;
+    weight: 400;
+  }
+}
+
+.section-promo {
+  height: calc(100vh - 80px);
+  max-height: 770px;
+  // border: 1px dashed red;
+
+  display: flex;
+  align-items: center;
+
+  .promo {
+    width: 550px;
+    margin-left: 40px;
+
+    &-title {
+      @extend %Alegreya;
+
+      font-size: 48px;
+      text-transform: uppercase;
+
+      line-height: 132.83%;
+      color: #e6e6e6;
+    }
+
+    &-subtitle {
+      font-size: 22px;
+      line-height: 36px;
+      color: #e6e6e6;
+
+      margin: 20px 0px;
+    }
+
+    &-buttons {
+      display: flex;
+
+      .promo-button {
+        margin-right: 20px;
+
+        &:nth-last-child(1) {
+          margin: 0;
+
+          background-color: transparent;
+          box-shadow: none;
+
+          border: 1px solid $white-color;
+          border-radius: 2px;
+        }
       }
     }
   }
+}
+
+.bg-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    no-repeat center center url(/IC_Repair_Design_Project/images/main-bg.png);
+  background-size: cover;
 }
