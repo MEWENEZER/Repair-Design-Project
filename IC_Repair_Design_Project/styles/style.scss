@@ -13,10 +13,6 @@ body {
   font-family: 'Nunito Sans', sans-serif;
 }
 
-%nunito {
-  font-family: 'Nunito Sans', sans-serif;
-}
-
 $accent-color: #e3b873;
 $white-color: #e6e6e6;
 
@@ -36,64 +32,6 @@ $white-color: #e6e6e6;
   color: $accent-color !important;
 }
 
-.header {
-  .navbar {
-    font-size: 12px;
-    line-height: 15px;
-
-    height: 80px;
-
-    &-brend {
-      color: $accent-color;
-    }
-
-    &-nav {
-      @extend .wrapper;
-      list-style-type: none;
-
-      .nav-item {
-        margin-right: 45px;
-
-        &:nth-last-child(1) {
-          margin: auto;
-        }
-      }
-
-      .nav-link {
-        text-decoration: none;
-
-        color: #e6e6e6;
-
-        &:hover {
-          color: $accent-color;
-        }
-      }
-    }
-
-    &-promo {
-      @extend .wrapper;
-
-      .promo-number {
-        color: $accent-color;
-        margin-right: 45px;
-      }
-    }
-  }
-}
-
-.promo-button {
-  padding: 13px 33px;
-  color: #e6e6e6;
-  background-color: $accent-color;
-  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-  border-radius: 2px;
-  border: none;
-
-  font-style: italic;
-
-  cursor: pointer;
-}
-
 %Alegreya {
   font: {
     family: 'Alegreya';
@@ -102,53 +40,104 @@ $white-color: #e6e6e6;
   }
 }
 
+.navbar {
+  font-size: 12px;
+  line-height: 15px;
+
+  height: 80px;
+
+  text-transform: uppercase;
+
+  &__logo {
+    color: $accent-color;
+  }
+
+  &__menu {
+    @extend .wrapper;
+    list-style-type: none;
+  }
+
+  &__item {
+    margin-right: 45px;
+
+    &:nth-last-child(1) {
+      margin: auto;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $white-color;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+  &__button {
+    padding: 13px 33px;
+
+    font-style: italic;
+    text-transform: uppercase;
+
+    color: $white-color;
+    background-color: $accent-color;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+
+    border-radius: 2px;
+    border: none;
+
+    cursor: pointer;
+
+    &:hover {
+      background-color: #cfa663;
+    }
+  }
+}
+
 .section-promo {
   height: calc(100vh - 80px);
   max-height: 770px;
-  // border: 1px dashed red;
 
-  display: flex;
-  align-items: center;
+  @extend .wrapper;
 
-  .promo {
+  color: $white-color;
+
+  &__content {
     width: 550px;
     margin-left: 40px;
+  }
 
-    &-title {
-      @extend %Alegreya;
+  &__buttons {
+    .navbar__button {
+      margin-right: 20px;
 
-      font-size: 48px;
-      text-transform: uppercase;
+      &:nth-last-child(1) {
+        margin: 0;
 
-      line-height: 132.83%;
-      color: #e6e6e6;
-    }
+        background-color: transparent;
+        box-shadow: none;
 
-    &-subtitle {
-      font-size: 22px;
-      line-height: 36px;
-      color: #e6e6e6;
-
-      margin: 20px 0px;
-    }
-
-    &-buttons {
-      display: flex;
-
-      .promo-button {
-        margin-right: 20px;
-
-        &:nth-last-child(1) {
-          margin: 0;
-
-          background-color: transparent;
-          box-shadow: none;
-
-          border: 1px solid $white-color;
-          border-radius: 2px;
-        }
+        border: 1px solid $white-color;
+        border-radius: 2px;
       }
     }
+  }
+
+  &__title {
+    @extend %Alegreya;
+
+    font-size: 48px;
+    text-transform: uppercase;
+
+    line-height: 132.83%;
+  }
+
+  &__subtitle {
+    font-size: 22px;
+    line-height: 36px;
+
+    margin: 20px 0px;
   }
 }
 
