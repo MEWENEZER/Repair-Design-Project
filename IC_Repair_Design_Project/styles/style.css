@@ -11,12 +11,16 @@ body {
   font-family: "Nunito Sans", sans-serif;
 }
 
+p {
+  cursor: default;
+}
+
 .container {
   width: 1240px;
   margin: 0 auto;
 }
 
-.wrapper, .section-about__buttons, .section-promo, .navbar__menu {
+.wrapper, .section-about__buttons, .section-promo, .navbar__menu, .navbar__promo {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -109,13 +113,17 @@ body {
   border: 1px solid #e6e6e6;
   border-radius: 2px;
 }
+.section-promo__buttons .navbar__button:nth-last-child(1):hover {
+  color: #e3b873;
+  border: 1px solid #e3b873;
+}
 .section-promo__title {
   font-size: 48px;
   text-transform: uppercase;
   line-height: 132.83%;
 }
 .section-promo__subtitle {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 36px;
   margin: 20px 0px;
 }
@@ -158,6 +166,8 @@ body {
 }
 .section-about__photo-area {
   grid-column: 2/6;
+  height: 480px;
+  width: 720px;
 }
 .section-about__title-area {
   grid-column: 1/3;
