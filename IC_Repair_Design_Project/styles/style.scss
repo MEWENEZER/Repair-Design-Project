@@ -7,7 +7,13 @@
 }
 
 body {
-  background-color: #131313;
+  background: linear-gradient(
+    to bottom,
+    #131313 0%,
+    #131313 calc(80px + 770px + 742px + 126px + 230px),
+    #e6e6e6 calc(80px + 770px + 742px + 126px + 230px),
+    #e6e6e6 100%
+  );
 
   font-family: 'Alegreya', serif;
   font-family: 'Nunito Sans', sans-serif;
@@ -193,8 +199,6 @@ $grey-color: rgba(255, 255, 255, 0.3);
 }
 
 .section-about {
-  height: 550px;
-
   &__content {
     margin: 100px 0px;
 
@@ -299,3 +303,50 @@ $grey-color: rgba(255, 255, 255, 0.3);
 //     }
 //   }
 // }
+
+.section-video {
+  &__content {
+    width: 820px;
+
+    margin: 0 auto 90px;
+  }
+
+  &__title-area {
+    width: 180px;
+    margin: 30px auto;
+  }
+
+  &__text-area {
+    width: 660px;
+    font-size: 18px;
+    text-align: center;
+
+    margin: 0 auto;
+    line-height: 37px;
+  }
+
+  &__title {
+    @extend .section-about__title-top;
+
+    text-align: center;
+
+    font-size: 20px;
+    color: $white-color;
+
+    margin-bottom: 10px;
+  }
+
+  &__svg {
+    @extend .wrapper;
+  }
+
+  &__line {
+    height: 1px;
+    width: 32px;
+
+    border: none;
+    margin: auto;
+
+    background-color: $accent-color;
+  }
+}
