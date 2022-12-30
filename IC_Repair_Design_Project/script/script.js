@@ -11,7 +11,7 @@ sectionAboutButtons.onclick = function (event) {
   let target = event.target; // Where was a click?
 
   highlight(target);
-};
+}
 
 function highlight(btn) {
   if (selectedActive) {
