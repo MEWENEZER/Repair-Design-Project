@@ -27,7 +27,8 @@ p {
 
 $accent-color: #e3b873;
 $white-color: #e6e6e6;
-$grey-color: rgba(255, 255, 255, 0.3);
+$grey-color: #4a4a4a;
+$light-grey-color: #6d6d6d;
 
 .container {
   width: 1240px;
@@ -221,7 +222,7 @@ $grey-color: rgba(255, 255, 255, 0.3);
   }
 
   &__button {
-    color: $grey-color;
+    color: $light-grey-color;
     background-color: transparent;
 
     border: none;
@@ -371,5 +372,59 @@ $grey-color: rgba(255, 255, 255, 0.3);
 
       background-color: $accent-color;
     }
+  }
+}
+
+.section-form {
+  background-color: $white-color;
+
+  &__menu {
+    @extend .navbar__menu;
+    width: 720px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+
+    padding: 60px 0;
+  }
+
+  &__label {
+    font-size: 13px;
+    line-height: 21px;
+    color: $light-grey-color;
+  }
+
+  &__input {
+    font-size: 14px;
+    line-height: 23px;
+
+    width: 200px;
+
+    color: $grey-color;
+
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid $light-grey-color;
+  }
+
+  &__content {
+    display: grid;
+
+    margin-right: 60px;
+
+    &:nth-last-child(1) {
+      margin-top: 30px;
+      display: flex;
+
+      :nth-child(1) {
+        width: fit-content;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &__button {
+    @extend %button;
+    width: 200px;
   }
 }
