@@ -6,7 +6,7 @@
 }
 
 body {
-  background: linear-gradient(to bottom, #131313 0%, #131313 1948px, #e6e6e6 1948px, #e6e6e6 100%);
+  background-color: #131313;
   font-family: "Alegreya", serif;
   font-family: "Nunito Sans", sans-serif;
 }
@@ -20,7 +20,7 @@ p {
   margin: 0 auto;
 }
 
-.wrapper, .section-video__svg, .section-about__buttons, .section-promo, .navbar__menu, .navbar__promo {
+.wrapper, .section-video-title__svg, .section-about__buttons, .section-promo, .navbar__menu, .navbar__promo {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,7 +31,7 @@ p {
   cursor: default !important;
 }
 
-.section-about__title-top, .section-video__title, .section-about__title, .section-about__button, .section-promo__title {
+.section-about__title-top, .section-video-title__title, .section-about__title, .section-about__button, .section-promo__title {
   font-family: "Alegreya";
   font-style: normal;
   font-weight: 400;
@@ -173,7 +173,7 @@ p {
   line-height: 138.6%;
   text-transform: uppercase;
 }
-.section-about__title-top, .section-video__title {
+.section-about__title-top, .section-video-title__title {
   text-transform: uppercase;
   font-size: 27px;
 }
@@ -193,28 +193,38 @@ p {
   height: 100%;
 }
 
-.section-video__content {
+.section-video-player {
+  background: linear-gradient(to bottom, #131313 0%, #131313 50%, #e6e6e6 50%, #e6e6e6 100%);
+}
+.section-video-player__content {
   width: 820px;
-  margin: 0 auto 90px;
+  height: 459px;
+  margin: 0 auto;
 }
-.section-video__title-area {
-  width: 180px;
-  margin: 30px auto;
+.section-video-subtitle {
+  background-color: #e6e6e6;
 }
-.section-video__text-area {
-  width: 660px;
+.section-video-subtitle__content {
+  padding: 40px 0 90px;
+}
+.section-video-subtitle__text-area {
+  max-width: 660px;
   font-size: 18px;
   text-align: center;
   margin: 0 auto;
   line-height: 37px;
 }
-.section-video__title {
+.section-video-title__content {
+  width: 180px;
+  margin: 30px auto;
+}
+.section-video-title__title {
   text-align: center;
   font-size: 20px;
   color: #e6e6e6;
   margin-bottom: 10px;
 }
-.section-video__line {
+.section-video-title__line {
   height: 1px;
   width: 32px;
   border: none;
