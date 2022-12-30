@@ -20,7 +20,7 @@ p {
   margin: 0 auto;
 }
 
-.wrapper, .section-video-title__svg, .section-about__buttons, .section-promo, .navbar__menu, .navbar__promo {
+.wrapper, .section-video-title__svg, .section-about__buttons, .section-promo, .navbar__menu, .section-form__menu, .navbar__promo {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -54,7 +54,7 @@ p {
   transform: scaleX(1);
 }
 
-.navbar__button {
+.section-form__button, .navbar__button {
   padding: 13px 33px;
   font-style: italic;
   text-transform: uppercase;
@@ -65,10 +65,10 @@ p {
   border: none;
   cursor: pointer;
 }
-.navbar__button:hover {
+.section-form__button:hover, .navbar__button:hover {
   background-color: #cfa663;
 }
-.navbar__button:nth-last-child(1) {
+.section-form__button:nth-last-child(1), .navbar__button:nth-last-child(1) {
   margin: 0;
 }
 
@@ -81,7 +81,7 @@ p {
 .navbar__logo {
   color: #e3b873;
 }
-.navbar__menu {
+.navbar__menu, .section-form__menu {
   list-style-type: none;
 }
 .navbar__item {
@@ -147,7 +147,7 @@ p {
   justify-items: flex-start;
 }
 .section-about__button {
-  color: rgba(255, 255, 255, 0.3);
+  color: #6d6d6d;
   background-color: transparent;
   border: none;
   text-transform: uppercase;
@@ -230,6 +230,46 @@ p {
   border: none;
   margin: auto;
   background-color: #e3b873;
+}
+
+.section-form {
+  background-color: #e6e6e6;
+}
+.section-form__menu {
+  width: 720px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  padding: 60px 0;
+}
+.section-form__label {
+  font-size: 13px;
+  line-height: 21px;
+  color: #6d6d6d;
+}
+.section-form__input {
+  font-size: 14px;
+  line-height: 23px;
+  width: 200px;
+  color: #4a4a4a;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #6d6d6d;
+}
+.section-form__content {
+  display: grid;
+  margin-right: 60px;
+}
+.section-form__content:nth-last-child(1) {
+  margin-top: 30px;
+  display: flex;
+}
+.section-form__content:nth-last-child(1) :nth-child(1) {
+  width: fit-content;
+  margin-right: 10px;
+}
+.section-form__button {
+  width: 200px;
 }
 
 /*# sourceMappingURL=style.css.map */
