@@ -2,6 +2,8 @@
   box-sizing: border-box;
   transition: 0.2s ease-in-out;
 
+  scroll-behavior: smooth;
+
   padding: 0;
   margin: 0;
 }
@@ -124,6 +126,7 @@ p {
 
     &__svg {
       @extend .wrapper;
+      height: 29px;
     }
 
     &__line {
@@ -238,7 +241,7 @@ p {
 
 .section-about {
   &__content {
-    margin: 100px 0px;
+    padding: 100px 0px;
 
     display: grid;
     grid-gap: 40px;
@@ -366,6 +369,11 @@ p {
 
   &-title {
     @extend %title;
+
+    .title__svg {
+      background: center center
+        url(/IC_Repair_Design_Project/images/video-cam.svg) no-repeat;
+    }
   }
 }
 
@@ -434,6 +442,12 @@ p {
 
 .section-offer {
   @extend %title;
+
+  .title__svg {
+    background: center center url(/IC_Repair_Design_Project/images/tools.svg)
+      no-repeat;
+  }
+
   background-color: $white-color;
   padding: 90px 0;
 
