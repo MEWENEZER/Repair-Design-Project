@@ -89,10 +89,10 @@ p {
 .section-offer .title__svg, .section-video-title .title__svg, .section-video-subtitle__content .title__svg {
   height: 29px;
 }
-.section-offer .title__line, .section-video-title .title__line, .section-video-subtitle__content .title__line {
+.section-offer .title__svg::before, .section-video-title .title__svg::before, .section-video-subtitle__content .title__svg::before, .section-offer .title__svg::after, .section-video-title .title__svg::after, .section-video-subtitle__content .title__svg::after {
+  content: "";
   height: 1px;
   width: 32px;
-  border: none;
   margin: auto;
   background-color: #e3b873;
 }
@@ -154,7 +154,7 @@ p {
 }
 
 .bg-img {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), no-repeat center center url(/IC_Repair_Design_Project/images/main-bg-1.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), no-repeat center center url(/IC_Repair_Design_Project/images/main-bg-1.jpg);
   background-size: cover;
 }
 
@@ -231,6 +231,9 @@ p {
 }
 .section-video-subtitle__content {
   padding: 40px 0 90px;
+}
+.section-video-subtitle__content .title__svg::before {
+  display: none;
 }
 .section-video-subtitle__text-area {
   max-width: 660px;
