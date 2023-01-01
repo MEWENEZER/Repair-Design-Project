@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   transition: 0.2s ease-in-out;
+  scroll-behavior: smooth;
   padding: 0;
   margin: 0;
 }
@@ -85,10 +86,13 @@ p {
   color: #e6e6e6;
   margin-bottom: 10px;
 }
-.section-offer .title__line, .section-video-title .title__line, .section-video-subtitle__content .title__line {
+.section-offer .title__svg, .section-video-title .title__svg, .section-video-subtitle__content .title__svg {
+  height: 29px;
+}
+.section-offer .title__svg::before, .section-video-title .title__svg::before, .section-video-subtitle__content .title__svg::before, .section-offer .title__svg::after, .section-video-title .title__svg::after, .section-video-subtitle__content .title__svg::after {
+  content: "";
   height: 1px;
   width: 32px;
-  border: none;
   margin: auto;
   background-color: #e3b873;
 }
@@ -150,12 +154,12 @@ p {
 }
 
 .bg-img {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), no-repeat center center url(/IC_Repair_Design_Project/images/main-bg-1.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), no-repeat center center url(/IC_Repair_Design_Project/images/main-bg-1.jpg);
   background-size: cover;
 }
 
 .section-about__content {
-  margin: 100px 0px;
+  padding: 100px 0px;
   display: grid;
   grid-gap: 40px;
   grid-template-rows: minmax(auto, auto);
@@ -228,6 +232,9 @@ p {
 .section-video-subtitle__content {
   padding: 40px 0 90px;
 }
+.section-video-subtitle__content .title__svg::before {
+  display: none;
+}
 .section-video-subtitle__text-area {
   max-width: 660px;
   font-size: 18px;
@@ -235,6 +242,10 @@ p {
   margin: 0 auto;
   line-height: 37px;
 }
+.section-video-title .title__svg {
+  background: center center url(/IC_Repair_Design_Project/images/video-cam.svg) no-repeat;
+}
+
 .section-form {
   background-color: #e6e6e6;
 }
@@ -282,6 +293,9 @@ p {
 .section-offer {
   background-color: #e6e6e6;
   padding: 90px 0;
+}
+.section-offer .title__svg {
+  background: center center url(/IC_Repair_Design_Project/images/tools.svg) no-repeat;
 }
 .section-offer__card {
   width: 390px;
