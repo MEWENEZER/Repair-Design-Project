@@ -127,16 +127,18 @@ p {
     &__svg {
       @extend .wrapper;
       height: 29px;
-    }
 
-    &__line {
-      height: 1px;
-      width: 32px;
+      &::before,
+      &::after {
+        content: '';
 
-      border: none;
-      margin: auto;
+        height: 1px;
+        width: 32px;
 
-      background-color: $accent-color;
+        margin: auto;
+
+        background-color: $accent-color;
+      }
     }
   }
 }
@@ -235,7 +237,7 @@ p {
 
 .bg-img {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    no-repeat center center url(/IC_Repair_Design_Project/images/main-bg-1.png);
+    no-repeat center center url(/IC_Repair_Design_Project/images/main-bg-1.jpg);
   background-size: cover;
 }
 
@@ -355,6 +357,10 @@ p {
       padding: 40px 0 90px;
 
       @extend %title;
+
+      .title__svg::before {
+        display: none;
+      }
     }
 
     &__text-area {
