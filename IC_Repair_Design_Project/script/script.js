@@ -2,7 +2,7 @@
 //   'Добро пожаловать на домашнюю страницу сайта UberSweet//RepairDesign!'
 // );
 
-let sectionAboutButtons = document.querySelector('.section-about__buttons');
+let sectionAboutButtons = document.querySelector('.section-about__button-area');
 let sectionAboutPhoto = document.querySelector('.section-about__photo');
 
 let selectedActive = sectionAboutButtons.childNodes[1];
