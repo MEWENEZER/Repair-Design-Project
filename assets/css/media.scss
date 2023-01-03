@@ -61,3 +61,30 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 720px;
+  }
+
+  .navbar {
+    &__menu {
+      display: none;
+    }
+
+    &__button {
+      padding: 12px 28px;
+      font-size: 12px;
+    }
+  }
+
+  .section-promo {
+    &__content {
+      width: 450px;
+    }
+
+    &__title {
+      font-size: 40px;
+    }
+  }
+}

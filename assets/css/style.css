@@ -152,6 +152,7 @@ p {
 .section-promo__subtitle {
   font-size: 20px;
   line-height: 36px;
+  width: 400px;
   margin: 20px 0px;
 }
 
