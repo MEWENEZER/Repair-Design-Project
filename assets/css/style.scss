@@ -191,6 +191,7 @@ p {
 .section-promo {
   height: calc(100vh - 80px);
   max-height: 770px;
+  min-height: 320px;
 
   @extend .wrapper;
 
@@ -234,6 +235,7 @@ p {
   &__subtitle {
     font-size: 20px;
     line-height: 36px;
+    width: 400px;
 
     margin: 20px 0px;
   }
@@ -417,13 +419,15 @@ p {
   }
 
   &__content {
-    display: grid;
+    display: flex;
+    flex-direction: column;
 
     margin-right: 60px;
 
     &:nth-last-child(1) {
       margin-top: 30px;
-      display: flex;
+      flex-direction: row;
+      margin-right: 0;
 
       :nth-child(1) {
         width: fit-content;
@@ -440,16 +444,24 @@ p {
 
 .section-offer {
   @extend %title;
+  background-color: $white-color;
+
+  &__content {
+    padding: 90px 0;
+  }
 
   .title__svg {
     background: center center url(../images/tools.svg) no-repeat;
   }
 
-  background-color: $white-color;
-  padding: 90px 0;
-
   &__cards {
-    @extend .wrapper;
+    display: grid;
+    justify-content: space-around;
+
+    grid-template-columns: repeat(3, 390px);
+    grid-auto-columns: auto;
+
+    row-gap: 40px;
   }
 
   &__card {
