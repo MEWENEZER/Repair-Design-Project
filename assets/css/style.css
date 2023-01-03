@@ -218,6 +218,9 @@ p {
   height: 459px;
   margin: 0 auto;
 }
+.section-video-player__content iframe {
+  border: none;
+}
 .section-video-subtitle {
   background-color: #e6e6e6;
 }
