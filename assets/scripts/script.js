@@ -26,17 +26,17 @@ function highlight(btn) {
 function changePhoto(id) {
   switch (id) {
     case '1':
-      sectionAboutPhoto.src = '/assets/images/main-bg-3.jpg';
+      sectionAboutPhoto.src = 'assets/images/main-bg-3.jpg';
       sectionAboutPhoto.alt = 'Moscow, Tverskaya';
       break;
 
     case '2':
-      sectionAboutPhoto.src = '/assets/images/main-bg-2.jpg';
+      sectionAboutPhoto.src = 'assets/images/main-bg-2.jpg';
       sectionAboutPhoto.alt = 'Moscow, Arbat';
       break;
 
     case '3':
-      sectionAboutPhoto.src = '/assets/images/main-bg-1.jpg';
+      sectionAboutPhoto.src = 'assets/images/main-bg-1.jpg';
       sectionAboutPhoto.alt = 'Moscow, Tagansky';
       break;
   }
