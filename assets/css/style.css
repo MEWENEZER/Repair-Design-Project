@@ -22,7 +22,7 @@ p {
   margin: 0 auto;
 }
 
-.wrapper, .section-offer__cards, .section-about__button-area, .section-promo, .navbar__menu, .section-form__menu, .navbar__promo, .section-offer .title__svg, .section-video-title .title__svg, .section-video-subtitle__content .title__svg {
+.wrapper, .section-about__button-area, .section-promo, .navbar__menu, .section-form__menu, .navbar__promo, .section-offer .title__svg, .section-video-title .title__svg, .section-video-subtitle__content .title__svg {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -123,6 +123,7 @@ p {
 .section-promo {
   height: calc(100vh - 80px);
   max-height: 770px;
+  min-height: 320px;
   color: #e6e6e6;
 }
 .section-promo__content {
@@ -270,7 +271,8 @@ p {
   outline: none;
 }
 .section-form__content {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   margin-right: 60px;
 }
 .section-form__content:nth-last-child(1) {
@@ -287,10 +289,19 @@ p {
 
 .section-offer {
   background-color: #e6e6e6;
+}
+.section-offer__content {
   padding: 90px 0;
 }
 .section-offer .title__svg {
   background: center center url(../images/tools.svg) no-repeat;
+}
+.section-offer__cards {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, 390px);
+  grid-auto-columns: auto;
+  row-gap: 40px;
 }
 .section-offer__card {
   width: 390px;

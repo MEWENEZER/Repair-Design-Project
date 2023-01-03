@@ -191,6 +191,7 @@ p {
 .section-promo {
   height: calc(100vh - 80px);
   max-height: 770px;
+  min-height: 320px;
 
   @extend .wrapper;
 
@@ -417,7 +418,8 @@ p {
   }
 
   &__content {
-    display: grid;
+    display: flex;
+    flex-direction: column;
 
     margin-right: 60px;
 
@@ -440,16 +442,24 @@ p {
 
 .section-offer {
   @extend %title;
+  background-color: $white-color;
+
+  &__content {
+    padding: 90px 0;
+  }
 
   .title__svg {
     background: center center url(../images/tools.svg) no-repeat;
   }
 
-  background-color: $white-color;
-  padding: 90px 0;
-
   &__cards {
-    @extend .wrapper;
+    display: grid;
+    justify-content: space-between;
+
+    grid-template-columns: repeat(3, 390px);
+    grid-auto-columns: auto;
+
+    row-gap: 40px;
   }
 
   &__card {

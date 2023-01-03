@@ -2,4 +2,30 @@
   .container {
     width: 1140px;
   }
+
+  .navbar {
+    margin: 0px 20px;
+  }
+
+  .section-about {
+    &__content {
+      grid-template-columns: repeat(4, 190px) auto;
+      padding-bottom: 70px;
+    }
+
+    &__button-area {
+      width: 640px;
+      padding: 70px 0 30px;
+    }
+  }
+
+  .section-video {
+    &-subtitle__content {
+      padding: 40px 0 70px;
+    }
+  }
+
+  .section-offer {
+    padding: 70px 0;
+  }
 }
