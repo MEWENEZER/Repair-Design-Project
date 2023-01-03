@@ -1,4 +1,4 @@
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1200px) {
   .container {
     width: 1140px;
   }
@@ -16,8 +16,28 @@
   .section-video-subtitle__content {
     padding: 40px 0 70px;
   }
-  .section-offer {
+  .section-offer__content {
     padding: 70px 0;
+  }
+  .section-offer__cards {
+    grid-template-columns: repeat(2, 390px);
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    width: 960px;
+  }
+  .navbar__item {
+    margin-right: 25px;
+  }
+  .section-about__subtitle {
+    margin-top: 0;
+  }
+  .section-about__button-area {
+    width: 520px;
+  }
+  .section-about__content {
+    grid-template: repeat(4, 80px)/repeat(4, 160px) auto;
   }
 }
 

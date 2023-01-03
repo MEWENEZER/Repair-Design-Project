@@ -1,4 +1,4 @@
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1200px) {
   .container {
     width: 1140px;
   }
@@ -26,6 +26,38 @@
   }
 
   .section-offer {
-    padding: 70px 0;
+    &__content {
+      padding: 70px 0;
+    }
+
+    &__cards {
+      grid-template-columns: repeat(2, 390px);
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    width: 960px;
+  }
+
+  .navbar {
+    &__item {
+      margin-right: 25px;
+    }
+  }
+
+  .section-about {
+    &__subtitle {
+      margin-top: 0;
+    }
+
+    &__button-area {
+      width: 520px;
+    }
+
+    &__content {
+      grid-template: repeat(4, 80px) / repeat(4, 160px) auto;
+    }
   }
 }

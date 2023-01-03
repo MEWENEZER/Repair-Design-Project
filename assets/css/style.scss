@@ -425,7 +425,8 @@ p {
 
     &:nth-last-child(1) {
       margin-top: 30px;
-      display: flex;
+      flex-direction: row;
+      margin-right: 0;
 
       :nth-child(1) {
         width: fit-content;
@@ -454,7 +455,7 @@ p {
 
   &__cards {
     display: grid;
-    justify-content: space-between;
+    justify-content: space-around;
 
     grid-template-columns: repeat(3, 390px);
     grid-auto-columns: auto;

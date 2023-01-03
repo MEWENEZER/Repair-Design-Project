@@ -277,7 +277,8 @@ p {
 }
 .section-form__content:nth-last-child(1) {
   margin-top: 30px;
-  display: flex;
+  flex-direction: row;
+  margin-right: 0;
 }
 .section-form__content:nth-last-child(1) :nth-child(1) {
   width: fit-content;
@@ -298,7 +299,7 @@ p {
 }
 .section-offer__cards {
   display: grid;
-  justify-content: space-between;
+  justify-content: space-around;
   grid-template-columns: repeat(3, 390px);
   grid-auto-columns: auto;
   row-gap: 40px;
