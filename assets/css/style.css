@@ -155,7 +155,7 @@ p {
 }
 
 .bg-img {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), no-repeat center center url(/IC_Repair_Design_Project/images/main-bg-1.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), no-repeat center center url(/assets/images/main-bg-1.jpg);
   background-size: cover;
 }
 
@@ -235,7 +235,7 @@ p {
   line-height: 37px;
 }
 .section-video-title .title__svg {
-  background: center center url(/IC_Repair_Design_Project/images/video-cam.svg) no-repeat;
+  background: center center url(/assets/images/video-cam.svg) no-repeat;
 }
 
 .section-form {
@@ -287,7 +287,7 @@ p {
   padding: 90px 0;
 }
 .section-offer .title__svg {
-  background: center center url(/IC_Repair_Design_Project/images/tools.svg) no-repeat;
+  background: center center url(/assets/images/tools.svg) no-repeat;
 }
 .section-offer__card {
   width: 390px;

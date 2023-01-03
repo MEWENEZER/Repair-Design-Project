@@ -363,8 +363,7 @@ p {
     @extend %title;
 
     .title__svg {
-      background: center center
-        url(/IC_Repair_Design_Project/images/video-cam.svg) no-repeat;
+      background: center center url(/assets/images/video-cam.svg) no-repeat;
     }
   }
 }
@@ -436,8 +435,7 @@ p {
   @extend %title;
 
   .title__svg {
-    background: center center url(/IC_Repair_Design_Project/images/tools.svg)
-      no-repeat;
+    background: center center url(/assets/images/tools.svg) no-repeat;
   }
 
   background-color: $white-color;
