@@ -15,10 +15,13 @@ $light-grey-color: #6d6d6d;
 $black-color: #1c1c1c;
 
 body {
-  background-color: #131313;
+  background-color: #181818;
 
-  font-family: 'Alegreya', serif;
-  font-family: 'Nunito Sans', sans-serif;
+  // font-family: 'PoiretOne', serif;
+  // font-family: 'Nunito Sans', sans-serif;
+
+  font-family: 'Poiret One', cursive;
+  font-family: 'Didact Gothic', sans-serif;
 
   color: $black-color;
 }
@@ -46,9 +49,9 @@ p {
   cursor: default !important;
 }
 
-%Alegreya {
+%PoiretOne {
   font: {
-    family: 'Alegreya';
+    family: 'Poiret One';
     style: normal;
     weight: 400;
   }
@@ -114,7 +117,7 @@ p {
     }
 
     &__title {
-      @extend %Alegreya;
+      @extend %PoiretOne;
 
       text-transform: uppercase;
       text-align: center;
@@ -220,7 +223,7 @@ p {
   }
 
   &__title {
-    @extend %Alegreya;
+    @extend %PoiretOne;
 
     font-size: 48px;
     text-transform: uppercase;
@@ -238,7 +241,7 @@ p {
 
 .bg-img {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    no-repeat center center url(/IC_Repair_Design_Project/images/main-bg-1.jpg);
+    center center url(../images/main-bg-1.jpg) no-repeat;
   background-size: cover;
 }
 
@@ -256,12 +259,12 @@ p {
     font-size: 18px;
     line-height: 138.6%;
 
-    @extend %Alegreya;
+    @extend %PoiretOne;
     text-transform: uppercase;
 
     &-top {
       grid-area: 1 / 1 / 2 / 3; // row-start / col-start / row-end / col-end
-      @extend %Alegreya;
+      @extend %PoiretOne;
       text-transform: uppercase;
     }
   }
@@ -307,7 +310,7 @@ p {
 
     border: none;
 
-    @extend %Alegreya;
+    @extend %PoiretOne;
     text-transform: uppercase;
     font-size: 14px;
     line-height: 150%;
@@ -322,8 +325,8 @@ p {
   &-player {
     background: linear-gradient(
       to bottom,
-      #131313 0%,
-      #131313 50%,
+      #181818 0%,
+      #181818 50%,
       $white-color 50%,
       $white-color 100%
     );
@@ -333,6 +336,10 @@ p {
       height: 459px;
 
       margin: 0 auto;
+
+      iframe {
+        border: none;
+      }
     }
   }
 
@@ -363,8 +370,7 @@ p {
     @extend %title;
 
     .title__svg {
-      background: center center
-        url(/IC_Repair_Design_Project/images/video-cam.svg) no-repeat;
+      background: center center url(../images/video-cam.svg) no-repeat;
     }
   }
 }
@@ -436,8 +442,7 @@ p {
   @extend %title;
 
   .title__svg {
-    background: center center url(/IC_Repair_Design_Project/images/tools.svg)
-      no-repeat;
+    background: center center url(../images/tools.svg) no-repeat;
   }
 
   background-color: $white-color;
@@ -476,7 +481,7 @@ p {
     }
 
     &-title {
-      @extend %Alegreya;
+      @extend %PoiretOne;
       padding-bottom: 10px;
     }
 

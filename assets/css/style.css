@@ -7,9 +7,9 @@
 }
 
 body {
-  background-color: #131313;
-  font-family: "Alegreya", serif;
-  font-family: "Nunito Sans", sans-serif;
+  background-color: #181818;
+  font-family: "Poiret One", cursive;
+  font-family: "Didact Gothic", sans-serif;
   color: #1c1c1c;
 }
 
@@ -35,7 +35,7 @@ p {
 }
 
 .section-offer__card-title, .section-about__button, .section-about__title-top, .section-about__title, .section-promo__title, .section-offer .title__title, .section-video-title .title__title, .section-video-subtitle__content .title__title {
-  font-family: "Alegreya";
+  font-family: "Poiret One";
   font-style: normal;
   font-weight: 400;
 }
@@ -155,7 +155,7 @@ p {
 }
 
 .bg-img {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), no-repeat center center url(/IC_Repair_Design_Project/images/main-bg-1.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), center center url(../images/main-bg-1.jpg) no-repeat;
   background-size: cover;
 }
 
@@ -211,12 +211,15 @@ p {
 }
 
 .section-video-player {
-  background: linear-gradient(to bottom, #131313 0%, #131313 50%, #e6e6e6 50%, #e6e6e6 100%);
+  background: linear-gradient(to bottom, #181818 0%, #181818 50%, #e6e6e6 50%, #e6e6e6 100%);
 }
 .section-video-player__content {
   width: 820px;
   height: 459px;
   margin: 0 auto;
+}
+.section-video-player__content iframe {
+  border: none;
 }
 .section-video-subtitle {
   background-color: #e6e6e6;
@@ -235,7 +238,7 @@ p {
   line-height: 37px;
 }
 .section-video-title .title__svg {
-  background: center center url(/IC_Repair_Design_Project/images/video-cam.svg) no-repeat;
+  background: center center url(../images/video-cam.svg) no-repeat;
 }
 
 .section-form {
@@ -287,7 +290,7 @@ p {
   padding: 90px 0;
 }
 .section-offer .title__svg {
-  background: center center url(/IC_Repair_Design_Project/images/tools.svg) no-repeat;
+  background: center center url(../images/tools.svg) no-repeat;
 }
 .section-offer__card {
   width: 390px;
