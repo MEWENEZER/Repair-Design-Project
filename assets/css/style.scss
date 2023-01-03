@@ -238,7 +238,7 @@ p {
 
 .bg-img {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    center center url(assets/images/main-bg-1.jpg) no-repeat;
+    center center url(../images/main-bg-1.jpg) no-repeat;
   background-size: cover;
 }
 
@@ -363,7 +363,7 @@ p {
     @extend %title;
 
     .title__svg {
-      background: center center url(assets/images/video-cam.svg) no-repeat;
+      background: center center url(../images/video-cam.svg) no-repeat;
     }
   }
 }
@@ -435,7 +435,7 @@ p {
   @extend %title;
 
   .title__svg {
-    background: center center url(assets/images/tools.svg) no-repeat;
+    background: center center url(../images/tools.svg) no-repeat;
   }
 
   background-color: $white-color;
