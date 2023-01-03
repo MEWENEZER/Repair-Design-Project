@@ -15,10 +15,13 @@ $light-grey-color: #6d6d6d;
 $black-color: #1c1c1c;
 
 body {
-  background-color: #131313;
+  background-color: #181818;
 
-  font-family: 'Alegreya', serif;
-  font-family: 'Nunito Sans', sans-serif;
+  // font-family: 'PoiretOne', serif;
+  // font-family: 'Nunito Sans', sans-serif;
+
+  font-family: 'Poiret One', cursive;
+  font-family: 'Didact Gothic', sans-serif;
 
   color: $black-color;
 }
@@ -46,9 +49,9 @@ p {
   cursor: default !important;
 }
 
-%Alegreya {
+%PoiretOne {
   font: {
-    family: 'Alegreya';
+    family: 'Poiret One';
     style: normal;
     weight: 400;
   }
@@ -114,7 +117,7 @@ p {
     }
 
     &__title {
-      @extend %Alegreya;
+      @extend %PoiretOne;
 
       text-transform: uppercase;
       text-align: center;
@@ -220,7 +223,7 @@ p {
   }
 
   &__title {
-    @extend %Alegreya;
+    @extend %PoiretOne;
 
     font-size: 48px;
     text-transform: uppercase;
@@ -256,12 +259,12 @@ p {
     font-size: 18px;
     line-height: 138.6%;
 
-    @extend %Alegreya;
+    @extend %PoiretOne;
     text-transform: uppercase;
 
     &-top {
       grid-area: 1 / 1 / 2 / 3; // row-start / col-start / row-end / col-end
-      @extend %Alegreya;
+      @extend %PoiretOne;
       text-transform: uppercase;
     }
   }
@@ -307,7 +310,7 @@ p {
 
     border: none;
 
-    @extend %Alegreya;
+    @extend %PoiretOne;
     text-transform: uppercase;
     font-size: 14px;
     line-height: 150%;
@@ -322,8 +325,8 @@ p {
   &-player {
     background: linear-gradient(
       to bottom,
-      #131313 0%,
-      #131313 50%,
+      #181818 0%,
+      #181818 50%,
       $white-color 50%,
       $white-color 100%
     );
@@ -478,7 +481,7 @@ p {
     }
 
     &-title {
-      @extend %Alegreya;
+      @extend %PoiretOne;
       padding-bottom: 10px;
     }
 
