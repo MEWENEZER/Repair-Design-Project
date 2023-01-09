@@ -7,9 +7,9 @@
 }
 
 body {
-  background-color: #131313;
-  font-family: "Alegreya", serif;
-  font-family: "Nunito Sans", sans-serif;
+  background-color: #181818;
+  font-family: "Poiret One", cursive;
+  font-family: "Didact Gothic", sans-serif;
   color: #1c1c1c;
 }
 
@@ -22,7 +22,7 @@ p {
   margin: 0 auto;
 }
 
-.wrapper, .section-offer__cards, .section-about__button-area, .section-promo, .navbar__menu, .section-form__menu, .navbar__promo, .section-offer .title__svg, .section-video-title .title__svg, .section-video-subtitle__content .title__svg {
+.wrapper, .section-about__button-area, .section-promo, .navbar__menu, .section-form__menu, .navbar__promo, .section-offer .title__svg, .section-video-title .title__svg, .section-video-subtitle__content .title__svg {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -35,7 +35,7 @@ p {
 }
 
 .section-offer__card-title, .section-about__button, .section-about__title-top, .section-about__title, .section-promo__title, .section-offer .title__title, .section-video-title .title__title, .section-video-subtitle__content .title__title {
-  font-family: "Alegreya";
+  font-family: "Poiret One";
   font-style: normal;
   font-weight: 400;
 }
@@ -123,6 +123,7 @@ p {
 .section-promo {
   height: calc(100vh - 80px);
   max-height: 770px;
+  min-height: 320px;
   color: #e6e6e6;
 }
 .section-promo__content {
@@ -151,16 +152,16 @@ p {
 .section-promo__subtitle {
   font-size: 20px;
   line-height: 36px;
+  width: 400px;
   margin: 20px 0px;
 }
 
 .bg-img {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), no-repeat center center url(/IC_Repair_Design_Project/images/main-bg-1.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), center center url(../images/main-bg-1.jpg) no-repeat;
   background-size: cover;
 }
 
 .section-about__content {
-  padding: 0px 0px 90px;
   margin-left: 40px;
   display: grid;
   gap: 20px 40px;
@@ -209,14 +210,32 @@ p {
   line-height: 150%;
   cursor: pointer;
 }
+.section-about__controls {
+  padding: 0px 0px 90px;
+  margin-left: 40px;
+}
+.section-about__controls button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+.section-about__controls button i {
+  background: transparent;
+  color: #e6e6e6;
+}
 
 .section-video-player {
-  background: linear-gradient(to bottom, #131313 0%, #131313 50%, #e6e6e6 50%, #e6e6e6 100%);
+  background: linear-gradient(to bottom, #181818 0%, #181818 50%, #e6e6e6 50%, #e6e6e6 100%);
 }
 .section-video-player__content {
   width: 820px;
   height: 459px;
   margin: 0 auto;
+}
+.section-video-player__content iframe {
+  border: none;
 }
 .section-video-subtitle {
   background-color: #e6e6e6;
@@ -235,7 +254,7 @@ p {
   line-height: 37px;
 }
 .section-video-title .title__svg {
-  background: center center url(/IC_Repair_Design_Project/images/video-cam.svg) no-repeat;
+  background: center center url(../images/video-cam.svg) no-repeat;
 }
 
 .section-form {
@@ -267,12 +286,14 @@ p {
   outline: none;
 }
 .section-form__content {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   margin-right: 60px;
 }
 .section-form__content:nth-last-child(1) {
   margin-top: 30px;
-  display: flex;
+  flex-direction: row;
+  margin-right: 0;
 }
 .section-form__content:nth-last-child(1) :nth-child(1) {
   width: fit-content;
@@ -284,10 +305,19 @@ p {
 
 .section-offer {
   background-color: #e6e6e6;
+}
+.section-offer__content {
   padding: 90px 0;
 }
 .section-offer .title__svg {
-  background: center center url(/IC_Repair_Design_Project/images/tools.svg) no-repeat;
+  background: center center url(../images/tools.svg) no-repeat;
+}
+.section-offer__cards {
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: repeat(3, 390px);
+  grid-auto-columns: auto;
+  row-gap: 40px;
 }
 .section-offer__card {
   width: 390px;

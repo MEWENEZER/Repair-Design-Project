@@ -1,0 +1,90 @@
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+
+  .navbar {
+    margin: 0px 20px;
+  }
+
+  .section-about {
+    &__content {
+      grid-template-columns: repeat(4, 190px) auto;
+      padding-bottom: 70px;
+    }
+
+    &__button-area {
+      width: 640px;
+      padding: 70px 0 30px;
+    }
+  }
+
+  .section-video {
+    &-subtitle__content {
+      padding: 40px 0 70px;
+    }
+  }
+
+  .section-offer {
+    &__content {
+      padding: 70px 0;
+    }
+
+    &__cards {
+      grid-template-columns: repeat(2, 390px);
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    width: 960px;
+  }
+
+  .navbar {
+    &__item {
+      margin-right: 25px;
+    }
+  }
+
+  .section-about {
+    &__subtitle {
+      margin-top: 0;
+    }
+
+    &__button-area {
+      width: 520px;
+    }
+
+    &__content {
+      grid-template: repeat(4, 80px) / repeat(4, 160px) auto;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 720px;
+  }
+
+  .navbar {
+    &__menu {
+      display: none;
+    }
+
+    &__button {
+      padding: 12px 28px;
+      font-size: 12px;
+    }
+  }
+
+  .section-promo {
+    &__content {
+      width: 450px;
+    }
+
+    &__title {
+      font-size: 40px;
+    }
+  }
+}

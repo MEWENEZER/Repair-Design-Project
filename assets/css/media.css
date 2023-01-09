@@ -1,0 +1,62 @@
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+  .navbar {
+    margin: 0px 20px;
+  }
+  .section-about__content {
+    grid-template-columns: repeat(4, 190px) auto;
+    padding-bottom: 70px;
+  }
+  .section-about__button-area {
+    width: 640px;
+    padding: 70px 0 30px;
+  }
+  .section-video-subtitle__content {
+    padding: 40px 0 70px;
+  }
+  .section-offer__content {
+    padding: 70px 0;
+  }
+  .section-offer__cards {
+    grid-template-columns: repeat(2, 390px);
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    width: 960px;
+  }
+  .navbar__item {
+    margin-right: 25px;
+  }
+  .section-about__subtitle {
+    margin-top: 0;
+  }
+  .section-about__button-area {
+    width: 520px;
+  }
+  .section-about__content {
+    grid-template: repeat(4, 80px)/repeat(4, 160px) auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 720px;
+  }
+  .navbar__menu {
+    display: none;
+  }
+  .navbar__button {
+    padding: 12px 28px;
+    font-size: 12px;
+  }
+  .section-promo__content {
+    width: 450px;
+  }
+  .section-promo__title {
+    font-size: 40px;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */

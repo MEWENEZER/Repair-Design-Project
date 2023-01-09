@@ -6,14 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/IC_Repair_Design_Project/styles/style.css">
-    <link rel="stylesheet" href="/IC_Repair_Design_Project/styles/media.css">
-    <link rel="shortcut icon" href="/IC_Repair_Design_Project/images/tools.svg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+
+    <link rel="shortcut icon" href="assets/images/tools.svg" type="image/x-icon">
 
     <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Nunito+Sans:ital@0;1&display=swap"
         rel="stylesheet">
 
-    <script src="/IC_Repair_Design_Project/script/script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Poiret+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"
+        defer></script> -->
+
+    <script src="assets/scripts/script.js" defer></script>
 
     <title>Repair Design</title>
 </head>
@@ -50,9 +64,7 @@
                     </h1>
 
                     <p class="section-promo__subtitle">
-                        Get ready-made turnkey repairs on time
-                        with work time saving up to 45 days and 20% from
-                        cost of materials due to the organization of work
+                        Get ready-made turnkey repairs on time with high-quality execution for your property
                     </p>
 
                     <div class="section-promo__buttons">
@@ -71,15 +83,15 @@
         <section class="section-about" id="about">
             <div class="container">
                 <div class="section-about__button-area">
-                    <button class="section-about__button active" id="1">
+                    <button class="section-about__button" id="0">
                         Moscow, Tverskaya
                     </button>
 
-                    <button class="section-about__button" id="2">
+                    <button class="section-about__button" id="1">
                         Moscow, Arbat
                     </button>
 
-                    <button class="section-about__button" id="3">
+                    <button class="section-about__button" id="2">
                         Moscow, Tagansky
                     </button>
                 </div>
@@ -137,9 +149,30 @@
                     </div>
 
                     <div class="section-about__photo-area">
-                        <img src="/IC_Repair_Design_Project/images/main-bg-3.jpg" alt="Moscow, Tverskaya"
-                            class="section-about__photo">
+                        <img src="assets/images/main-bg-3.jpg" alt="Moscow, Tverskaya" class="section-about__photo">
                     </div>
+                </div>
+
+                <div class="section-about__controls">
+                    <button class="left-button">
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                    </button>
+
+                    <button class="indicator" id="0">
+                        <i class="fa-solid fa-minus"></i>
+                    </button>
+
+                    <button class="indicator" id="1">
+                        <i class="fa-solid fa-minus"></i>
+                    </button>
+
+                    <button class="indicator" id="2">
+                        <i class="fa-solid fa-minus"></i>
+                    </button>
+
+                    <button class="right-button">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </button>
                 </div>
             </div>
         </section>
@@ -159,8 +192,9 @@
 
         <section class="section-video-player">
             <div class="section-video-player__content">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/BEaoq7hzcSQ?controls=0"
-                    title="YouTube video player" frameborder="0"
+                <h2 style="display: none;">Repair design project with online control</h2>
+                <iframe width="820" height="459" src="https://www.youtube.com/embed/BEaoq7hzcSQ?controls=0"
+                    title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
                 </iframe>
@@ -182,6 +216,8 @@
 
         <section class="section-form">
             <div class="container">
+                <h2 style="display: none;">Request a call from a specialist</h2>
+
                 <form action="#" method="post" target="_blank">
                     <fieldset style="border: none;">
                         <ul class="section-form__menu">
@@ -197,7 +233,9 @@
                                     placeholder="Your phone number:" id="phone">
                             </li>
 
-                            <button class="section-form__button" type="submit">Submit</button>
+                            <li>
+                                <button class="section-form__button" type="submit">Submit</button>
+                            </li>
 
                             <li class="section-form__content">
                                 <input class="section-form__input" type="checkbox" name="processing" id="processing"
@@ -213,89 +251,88 @@
 
         <section class="section-offer">
             <div class="container">
-                <div class="title__content">
-                    <h2 class="title__title" style="color: #1c1c1c;">
-                        Types of repair
-                    </h2>
+                <div class="section-offer__content">
+                    <div class="title__content">
+                        <h2 class="title__title" style="color: #1c1c1c;">
+                            Types of repair
+                        </h2>
 
-                    <div class="title__svg">
-                    </div>
-                </div>
-
-                <div class="section-offer__cards">
-                    <div class="section-offer__card">
-                        <img class="section-offer__card-image" src="/IC_Repair_Design_Project/images/main-bg-1.jpg"
-                            alt="">
-
-                        <div class="section-offer__card-description">
-                            <h3 class="section-offer__card-title">
-                                Designer Repair
-                            </h3>
-
-                            <ul class="section-offer__card-list">
-                                <li class="section-offer__card-item">Dismantling of old coatings</li>
-                                <li class="section-offer__card-item">Wallpapering</li>
-                                <li class="section-offer__card-item">Painting walls and ceilings</li>
-                                <li class="section-offer__card-item">Laying flooring</li>
-                                <li class="section-offer__card-item">Replacing plumbing</li>
-                                <li class="section-offer__card-item">Replacing sockets and switches</li>
-                                <li class="section-offer__card-item">Replacing doors</li>
-                            </ul>
+                        <div class="title__svg">
                         </div>
-
-                        <button class="section-offer__button" type="submit">
-                            From 4000 rub / m<sup><small>2</small></sup>
-                        </button>
                     </div>
 
-                    <div class="section-offer__card">
-                        <img class="section-offer__card-image" src="/IC_Repair_Design_Project/images/main-bg-2.jpg"
-                            alt="">
+                    <div class="section-offer__cards">
+                        <div class="section-offer__card">
+                            <img class="section-offer__card-image" src="assets/images/card-bg-1.jpg" alt="">
 
-                        <div class="section-offer__card-description">
-                            <h3 class="section-offer__card-title">
-                                Redecorating
-                            </h3>
+                            <div class="section-offer__card-description">
+                                <h3 class="section-offer__card-title">
+                                    Designer Repair
+                                </h3>
 
-                            <ul class="section-offer__card-list">
-                                <li class="section-offer__card-item">Dismantling of old coatings</li>
-                                <li class="section-offer__card-item">Wallpapering</li>
-                                <li class="section-offer__card-item">Painting walls and ceilings</li>
-                                <li class="section-offer__card-item">Laying flooring</li>
-                                <li class="section-offer__card-item">Replacing plumbing</li>
-                                <li class="section-offer__card-item">Replacing sockets and switches</li>
-                                <li class="section-offer__card-item">Replacing doors</li>
-                            </ul>
+                                <ul class="section-offer__card-list">
+                                    <li class="section-offer__card-item">Dismantling of old coatings</li>
+                                    <li class="section-offer__card-item">Wallpapering</li>
+                                    <li class="section-offer__card-item">Painting walls and ceilings</li>
+                                    <li class="section-offer__card-item">Laying flooring</li>
+                                    <li class="section-offer__card-item">Replacing plumbing</li>
+                                    <li class="section-offer__card-item">Replacing sockets and switches</li>
+                                    <li class="section-offer__card-item">Replacing doors</li>
+                                </ul>
+                            </div>
+
+                            <button class="section-offer__button" type="submit">
+                                From 4000 rub / m<sup><small>2</small></sup>
+                            </button>
                         </div>
 
-                        <button class="section-offer__button" type="submit">
-                            From 9000 rub / m<sup><small>2</small></sup>
-                        </button>
-                    </div>
+                        <div class="section-offer__card">
+                            <img class="section-offer__card-image" src="assets/images/card-bg-2.jpg" alt="">
 
-                    <div class="section-offer__card">
-                        <img class="section-offer__card-image" src="/IC_Repair_Design_Project/images/main-bg-3.jpg"
-                            alt="">
+                            <div class="section-offer__card-description">
+                                <h3 class="section-offer__card-title">
+                                    Redecorating
+                                </h3>
 
-                        <div class="section-offer__card-description">
-                            <h3 class="section-offer__card-title">
-                                Overhaul
-                            </h3>
+                                <ul class="section-offer__card-list">
+                                    <li class="section-offer__card-item">Dismantling of old coatings</li>
+                                    <li class="section-offer__card-item">Wallpapering</li>
+                                    <li class="section-offer__card-item">Painting walls and ceilings</li>
+                                    <li class="section-offer__card-item">Laying flooring</li>
+                                    <li class="section-offer__card-item">Replacing plumbing</li>
+                                    <li class="section-offer__card-item">Replacing sockets and switches</li>
+                                    <li class="section-offer__card-item">Replacing doors</li>
+                                </ul>
+                            </div>
 
-                            <ul class="section-offer__card-list">
-                                <li class="section-offer__card-item">Dismantling of old coatings</li>
-                                <li class="section-offer__card-item">Wallpapering</li>
-                                <li class="section-offer__card-item">Painting walls and ceilings</li>
-                                <li class="section-offer__card-item">Laying flooring</li>
-                                <li class="section-offer__card-item">Replacing plumbing</li>
-                                <li class="section-offer__card-item">Replacing sockets and switches</li>
-                                <li class="section-offer__card-item">Replacing doors</li>
-                            </ul>
+                            <button class="section-offer__button" type="submit">
+                                From 9000 rub / m<sup><small>2</small></sup>
+                            </button>
                         </div>
 
-                        <button class="section-offer__button" type="submit">
-                            From 1800 rub / m<sup><small>2</small></sup>
-                        </button>
+                        <div class="section-offer__card">
+                            <img class="section-offer__card-image" src="assets/images/card-bg-3.jpg" alt="">
+
+                            <div class="section-offer__card-description">
+                                <h3 class="section-offer__card-title">
+                                    Overhaul
+                                </h3>
+
+                                <ul class="section-offer__card-list">
+                                    <li class="section-offer__card-item">Dismantling of old coatings</li>
+                                    <li class="section-offer__card-item">Wallpapering</li>
+                                    <li class="section-offer__card-item">Painting walls and ceilings</li>
+                                    <li class="section-offer__card-item">Laying flooring</li>
+                                    <li class="section-offer__card-item">Replacing plumbing</li>
+                                    <li class="section-offer__card-item">Replacing sockets and switches</li>
+                                    <li class="section-offer__card-item">Replacing doors</li>
+                                </ul>
+                            </div>
+
+                            <button class="section-offer__button" type="submit">
+                                From 1800 rub / m<sup><small>2</small></sup>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
