@@ -162,7 +162,6 @@ p {
 }
 
 .section-about__content {
-  padding: 0px 0px 90px;
   margin-left: 40px;
   display: grid;
   gap: 20px 40px;
@@ -210,6 +209,21 @@ p {
   font-size: 14px;
   line-height: 150%;
   cursor: pointer;
+}
+.section-about__controls {
+  padding: 0px 0px 90px;
+  margin-left: 40px;
+}
+.section-about__controls button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+.section-about__controls button i {
+  background: transparent;
+  color: #e6e6e6;
 }
 
 .section-video-player {
