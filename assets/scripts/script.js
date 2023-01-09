@@ -3,7 +3,7 @@
 // );
 
 const buttons = document.querySelectorAll('.section-about__button');
-const sectionAboutPhoto = document.querySelector('.section-about__photo');
+const photo = document.querySelector('.section-about__photo');
 
 const indicators = document.querySelectorAll('.indicator');
 
@@ -28,7 +28,7 @@ function cardsPlugin(activeCard = 0) {
       // Смена индекса фотографии
       activeSlideIndex = btn.id;
 
-      indicatorPlugin(activeSlideIndex);
+      indicators[activeSlideIndex].childNodes[1].classList.add('active');
     });
   }
 
@@ -44,48 +44,12 @@ function cardsPlugin(activeCard = 0) {
       // Смена индекса фотографии
       activeSlideIndex = ind.id;
 
-      linkPlugin(activeSlideIndex);
+      buttons[activeSlideIndex].classList.add('active');
     });
   }
 }
 
 cardsPlugin();
-
-function linkPlugin(activeCard = 0) {
-  buttons[activeCard].classList.add('active');
-
-  for (const btn of buttons) {
-    btn.addEventListener('click', () => {
-      clearActiveClasses();
-
-      btn.classList.add('active');
-
-      // Смена картинок
-      changePhoto(btn.id);
-
-      // Смена индекса фотографии
-      activeSlideIndex = btn.id;
-    });
-  }
-}
-
-function indicatorPlugin(activeCard = 0) {
-  indicators[activeCard].childNodes[1].classList.add('active');
-
-  for (const ind of indicators) {
-    ind.addEventListener('click', () => {
-      clearActiveClasses();
-
-      ind.childNodes[1].classList.add('active');
-
-      // Смена картинок
-      changePhoto(ind.id);
-
-      // Смена индекса фотографии
-      activeSlideIndex = ind.id;
-    });
-  }
-}
 
 // Очистка класса 'active'
 function clearActiveClasses() {
@@ -121,18 +85,18 @@ function changeSlides(direction) {
 function changePhoto(id) {
   switch (Number(id)) {
     case 0:
-      sectionAboutPhoto.src = 'assets/images/main-bg-3.jpg';
-      sectionAboutPhoto.alt = 'Moscow, Tverskaya';
+      photo.src = 'assets/images/main-bg-3.jpg';
+      photo.alt = 'Moscow, Tverskaya';
       break;
 
     case 1:
-      sectionAboutPhoto.src = 'assets/images/main-bg-2.jpg';
-      sectionAboutPhoto.alt = 'Moscow, Arbat';
+      photo.src = 'assets/images/main-bg-2.jpg';
+      photo.alt = 'Moscow, Arbat';
       break;
 
     case 2:
-      sectionAboutPhoto.src = 'assets/images/main-bg-1.jpg';
-      sectionAboutPhoto.alt = 'Moscow, Tagansky';
+      photo.src = 'assets/images/main-bg-1.jpg';
+      photo.alt = 'Moscow, Tagansky';
       break;
   }
 }
